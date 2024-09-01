@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+
+    "name": "Ad_Skip_YouTube",
+    "description": "Ad_Skip_YouTube",
+    "version": "1.0",
+
+    "content_scripts": [{
+    "js": ["script.js"],
+    "run_at": "document_start",
+    "matches": [ "<all_urls>"]
+ 
+}],
+
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}
